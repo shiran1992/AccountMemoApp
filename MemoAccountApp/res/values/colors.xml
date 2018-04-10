@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="common_top_bar_blue">#22292c</color>
+      <color name="btn_login_normal">#007086</color>
+    <color name="btn_login_pressed">#303744</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#2dafa3</color>
+    <color name="btn_register_pressed">#4ebcd3</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#cccccc</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+     <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+     <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+     <color name="gray_pressed">#b5b5b6</color>
+     <color name="gray_normal">#666667</color>
+     <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    
+      <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+    
+    <color name="text_color">#576B95</color>
+    <color name="white">#ffffff</color>
+    <!-- 注册登录界面 -->
+    <color name="registerpage_text_colors">#A2A2A2</color>
+    <color name="registerpage_text_getvericationcode_colors">#46A349</color>
+    <color name="registerpage_text_register">#ffffff</color>
+    <color name="search_bar_background">#EFEFF5</color>
+    <color name="search_page_cancle_text">#52CE52</color>
+    <color name="search_page_bottom_line">#D0D1D4</color>
+    <color name="search_content">#AEADAE</color>
+    <color name="string_register">#49A34B</color>
+    <color name="string_writh">#ffffff</color>
+    <color name="string_green">#2BCA63</color>
+	<!-- 线 -->
+	<color name="line_orange">#D3D3D3</color>
+    <!-- 探索界面 -->
+     <color name="find_page_fragment_bg">#F8F8F8</color>
+     <color name="find_page_fragment_textcolor">#25CB73</color>
+     <color name="find_page_fragment_topbg">#ffffff</color>
+     <color name="mian_icon_press">#EA5504</color>
+     <color name="mian_icon_up">#B8B8B8</color>
+     <color name="cannotapplyactivity">#AAAAAA</color>
+     <color name="whrite">#ffffff</color>
+     <color name="red">#FF5353</color>
+     <color name="blue">#39B1FF</color>
+     <color name="green">#47A34C</color>
+     <color name="orange">#D33006</color>
+     <color name="yellow">#F69D07</color>
+     <color name="lightred">#FFD9E6</color>
+     
+</resources>

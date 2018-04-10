@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">家庭理财通</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_register1">Register1Activity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_add_expend">AddExpendActivity</string>
+    <string name="title_activity_add_income">AddIncomeActivity</string>
+    <string name="title_activity_expend_list">ExpendListActivity</string>
+    <string name="title_activity_income_list">IncomeListActivity</string>
+    <string name="title_activity_data_manage">DataManageActivity</string>
+    <string name="title_activity_add_memo">AddMemoActivity</string>
+    <string name="title_activity_memo_list">MemoListActivity</string>
+
+</resources>

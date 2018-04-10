@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tv_memo_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="时间"
+        android:textColor="#2f2f2f"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_memo_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phonenum_psw_input_background"
+        android:ems="10"
+        android:hint="备注"
+        android:padding="10dp"
+        android:textColor="@color/registerpage_text_colors"
+        android:textSize="16sp" />
+
+</LinearLayout>

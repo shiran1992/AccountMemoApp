@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ffffff" >   
+<!-- 下面是线性布局，每个里面是相对布局，每个相对布局中是图片和文字 -->
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F8F7F7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/re_firstpage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ib_firstpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#F8F7F7"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_firstpage_press_up"/>
+
+            <TextView
+                android:id="@+id/tv_firstpage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_firstpage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="明细"
+                android:textColor="#9A9A9A"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_tribe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ib_tribe"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:background="#F8F7F7"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_tribe_press_up"  />
+
+            <TextView
+                android:id="@+id/tv_tribe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_tribe"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="图表"
+                android:textColor="#9A9A9A"
+                android:textSize="12sp" />
+
+           
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ib_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:background="#F8F7F7"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_contact_press_up"/>
+            
+
+            <TextView
+                android:id="@+id/tv_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_contact"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="发现"
+                android:textColor="#9A9A9A"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="3dp" >
+
+            <ImageView
+                android:id="@+id/ib_me"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:background="#F8F7F7"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/tab_me_press_up" />
+
+            <TextView
+                android:id="@+id/tv_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_me"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="我的"
+                android:textColor="#c0c0c0"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_temp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/main_bottom"
+        android:background="#d6d6d6" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom" />
+
+</RelativeLayout>
