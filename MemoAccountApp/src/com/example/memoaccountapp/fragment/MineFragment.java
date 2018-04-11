@@ -18,7 +18,7 @@ import android.widget.AdapterView;
 /**
  * 
  * @author Administrator
- *首页fragment
+ *我的fragment
  */
 public class MineFragment extends BaseFragment implements OnClickListener{
 	 
