@@ -9,6 +9,73 @@ package com.example.memoaccountapp;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_color=0x7f010001;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_inside_color=0x7f010005;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_outside_color=0x7f010006;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_thickness=0x7f010004;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_width=0x7f010000;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundHeight=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundWidth=0x7f010002;
     }
     public static final class color {
         public static final int black_deep=0x7f04001f;
@@ -211,7 +278,7 @@ public final class R {
         public static final int writeframe_getverication_code=0x7f020079;
     }
     public static final class id {
-        public static final int action_settings=0x7f090058;
+        public static final int action_settings=0x7f09005c;
         public static final int btn_login=0x7f090018;
         public static final int btn_register=0x7f090031;
         public static final int btn_save_expend=0x7f090005;
@@ -239,21 +306,24 @@ public final class R {
         public static final int ib_me=0x7f090024;
         public static final int ib_tribe=0x7f09001e;
         public static final int im_return_register=0x7f09002a;
-        public static final int imageView1=0x7f090057;
-        public static final int img_type=0x7f090050;
-        public static final int linear_add_expend=0x7f09003c;
-        public static final int linear_add_income=0x7f09003e;
-        public static final int linear_data_manage=0x7f090047;
-        public static final int linear_exit=0x7f090048;
-        public static final int linear_expend_list=0x7f090040;
-        public static final int linear_income_list=0x7f090042;
-        public static final int linear_memo_list=0x7f090045;
-        public static final int linear_show_memo=0x7f090043;
+        public static final int imageView1=0x7f09005b;
+        public static final int img_explore=0x7f090058;
+        public static final int img_type=0x7f090052;
+        public static final int line1=0x7f09003a;
+        public static final int linear_add_expend=0x7f09003e;
+        public static final int linear_add_income=0x7f090040;
+        public static final int linear_data_manage=0x7f090049;
+        public static final int linear_exit=0x7f09004a;
+        public static final int linear_expend_list=0x7f090042;
+        public static final int linear_income_list=0x7f090044;
+        public static final int linear_memo_list=0x7f090047;
+        public static final int linear_show_memo=0x7f090045;
         public static final int liner1=0x7f090015;
         public static final int login_register=0x7f090014;
         public static final int lv_expend=0x7f090012;
         public static final int lv_income=0x7f090013;
         public static final int lv_memo=0x7f090028;
+        public static final int lv_myfriends=0x7f09003b;
         public static final int main_bottom=0x7f090019;
         public static final int re_contact=0x7f090020;
         public static final int re_firstpage=0x7f09001a;
@@ -263,41 +333,42 @@ public final class R {
         public static final int relativeLayout1=0x7f090029;
         public static final int tv_account_in=0x7f09000e;
         public static final int tv_account_out=0x7f09000f;
-        public static final int tv_add_expend=0x7f09003d;
-        public static final int tv_add_income=0x7f09003f;
+        public static final int tv_add_expend=0x7f09003f;
+        public static final int tv_add_income=0x7f090041;
         public static final int tv_contact=0x7f090022;
-        public static final int tv_data_manage=0x7f090046;
+        public static final int tv_data_manage=0x7f090048;
         public static final int tv_date=0x7f090037;
         public static final int tv_date_week=0x7f090038;
-        public static final int tv_exit=0x7f090049;
-        public static final int tv_exit2=0x7f09004a;
-        public static final int tv_expend_account=0x7f090051;
-        public static final int tv_expend_address=0x7f090053;
-        public static final int tv_expend_list=0x7f090041;
-        public static final int tv_expend_note=0x7f090054;
+        public static final int tv_exit=0x7f09004b;
+        public static final int tv_exit2=0x7f09004c;
+        public static final int tv_expend_account=0x7f090053;
+        public static final int tv_expend_address=0x7f090055;
+        public static final int tv_expend_list=0x7f090043;
+        public static final int tv_expend_note=0x7f090056;
         public static final int tv_expend_time=0x7f090002;
-        public static final int tv_expend_type=0x7f090052;
+        public static final int tv_expend_type=0x7f090054;
+        public static final int tv_explore_title=0x7f090057;
         public static final int tv_firstpage=0x7f09001c;
-        public static final int tv_in_num=0x7f09004d;
+        public static final int tv_in_num=0x7f09004f;
         public static final int tv_in_number=0x7f090035;
         public static final int tv_in_out=0x7f090010;
         public static final int tv_in_out_state=0x7f090011;
         public static final int tv_in_str=0x7f090036;
         public static final int tv_income_time=0x7f090008;
         public static final int tv_left_month=0x7f090032;
-        public static final int tv_left_num=0x7f09004f;
+        public static final int tv_left_num=0x7f090051;
         public static final int tv_me=0x7f090025;
-        public static final int tv_memo_note=0x7f090056;
-        public static final int tv_memo_time=0x7f090055;
-        public static final int tv_month_num=0x7f09004b;
-        public static final int tv_month_str=0x7f09004c;
-        public static final int tv_name=0x7f09003b;
-        public static final int tv_out_num=0x7f09004e;
+        public static final int tv_memo_note=0x7f09005a;
+        public static final int tv_memo_time=0x7f090059;
+        public static final int tv_month_num=0x7f09004d;
+        public static final int tv_month_str=0x7f09004e;
+        public static final int tv_name=0x7f09003d;
+        public static final int tv_out_num=0x7f090050;
         public static final int tv_out_num_day=0x7f090039;
         public static final int tv_out_number=0x7f090034;
         public static final int tv_out_str=0x7f090033;
-        public static final int tv_show_memo=0x7f090044;
-        public static final int tv_str_name=0x7f09003a;
+        public static final int tv_show_memo=0x7f090046;
+        public static final int tv_str_name=0x7f09003c;
         public static final int tv_tribe=0x7f09001f;
         public static final int view_temp=0x7f090026;
     }
@@ -317,9 +388,10 @@ public final class R {
         public static final int fragment_firstpage=0x7f03000c;
         public static final int fragment_mine=0x7f03000d;
         public static final int item_expend=0x7f03000e;
-        public static final int item_memo=0x7f03000f;
-        public static final int refresh_layout=0x7f030010;
-        public static final int refresh_layout2=0x7f030011;
+        public static final int item_explore=0x7f03000f;
+        public static final int item_memo=0x7f030010;
+        public static final int refresh_layout=0x7f030011;
+        public static final int refresh_layout2=0x7f030012;
     }
     public static final class menu {
         public static final int add_expend=0x7f080000;
@@ -375,4 +447,162 @@ public final class R {
          */
         public static final int AppTheme=0x7f070001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a CircleImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircleImageView_border_color com.example.memoaccountapp:border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_border_width com.example.memoaccountapp:border_width}</code></td><td></td></tr>
+           </table>
+           @see #CircleImageView_border_color
+           @see #CircleImageView_border_width
+         */
+        public static final int[] CircleImageView = {
+            0x7f010000, 0x7f010001
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.memoaccountapp.R.attr#border_color}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.memoaccountapp:border_color
+        */
+        public static final int CircleImageView_border_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.memoaccountapp.R.attr#border_width}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.memoaccountapp:border_width
+        */
+        public static final int CircleImageView_border_width = 0;
+        /** Attributes that can be used with a RoundAngleImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RoundAngleImageView_roundHeight com.example.memoaccountapp:roundHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundAngleImageView_roundWidth com.example.memoaccountapp:roundWidth}</code></td><td></td></tr>
+           </table>
+           @see #RoundAngleImageView_roundHeight
+           @see #RoundAngleImageView_roundWidth
+         */
+        public static final int[] RoundAngleImageView = {
+            0x7f010002, 0x7f010003
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.memoaccountapp.R.attr#roundHeight}
+          attribute's value can be found in the {@link #RoundAngleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.memoaccountapp:roundHeight
+        */
+        public static final int RoundAngleImageView_roundHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.memoaccountapp.R.attr#roundWidth}
+          attribute's value can be found in the {@link #RoundAngleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.memoaccountapp:roundWidth
+        */
+        public static final int RoundAngleImageView_roundWidth = 0;
+        /**  自定义的圆形ImageView 
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #roundedimageview_border_inside_color com.example.memoaccountapp:border_inside_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #roundedimageview_border_outside_color com.example.memoaccountapp:border_outside_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #roundedimageview_border_thickness com.example.memoaccountapp:border_thickness}</code></td><td></td></tr>
+           </table>
+           @see #roundedimageview_border_inside_color
+           @see #roundedimageview_border_outside_color
+           @see #roundedimageview_border_thickness
+         */
+        public static final int[] roundedimageview = {
+            0x7f010004, 0x7f010005, 0x7f010006
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.memoaccountapp.R.attr#border_inside_color}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.memoaccountapp:border_inside_color
+        */
+        public static final int roundedimageview_border_inside_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.memoaccountapp.R.attr#border_outside_color}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.memoaccountapp:border_outside_color
+        */
+        public static final int roundedimageview_border_outside_color = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.example.memoaccountapp.R.attr#border_thickness}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.memoaccountapp:border_thickness
+        */
+        public static final int roundedimageview_border_thickness = 0;
+    };
 }

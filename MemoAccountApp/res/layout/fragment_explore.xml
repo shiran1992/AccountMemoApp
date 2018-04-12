@@ -16,5 +16,14 @@
             android:textColor="#ffffff"
             android:textSize="16sp" />
     </LinearLayout>
+    
+	 <ListView  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/line1"
+        android:id="@+id/lv_myfriends"  
+        >  
+    </ListView> 
 
 </LinearLayout>

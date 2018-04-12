@@ -26,45 +26,35 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * 
  * @author Administrator 首页fragment
  */
 public class FirstPageFragment extends BaseFragment implements OnClickListener {
-	// 昵称
-	@ViewInject(R.id.tv_name)
-	TextView tv_name;
 	// 新增支出
-	@ViewInject(R.id.linear_add_expend)
 	LinearLayout linear_add_expend;
 
 	// 新增收入
-	@ViewInject(R.id.linear_add_income)
 	LinearLayout linear_add_income;
 
 	// 我的支出
-	@ViewInject(R.id.linear_expend_list)
 	LinearLayout linear_expend_list;
 
 	// 我的收入
-	@ViewInject(R.id.linear_income_list)
 	LinearLayout linear_income_list;
 
 	// 数据管理
-	@ViewInject(R.id.linear_data_manage)
 	LinearLayout linear_data_manage;
 
 	// 增加收支便签
-	@ViewInject(R.id.linear_show_memo)
 	LinearLayout linear_show_memo;
 
 	// 收支便签列表
-	@ViewInject(R.id.linear_memo_list)
 	LinearLayout linear_memo_list;
 
 	// 退出
-	@ViewInject(R.id.linear_exit)
 	LinearLayout linear_exit;
 	View v;
 
@@ -79,7 +69,14 @@ public class FirstPageFragment extends BaseFragment implements OnClickListener {
 	@Override
 	public void initView() {
 		// TODO Auto-generated method stub
-
+		linear_add_expend = (LinearLayout) v.findViewById(R.id.linear_add_expend);
+		linear_add_income = (LinearLayout) v.findViewById(R.id.linear_add_income);
+		linear_expend_list = (LinearLayout) v.findViewById(R.id.linear_expend_list);
+		linear_income_list = (LinearLayout) v.findViewById(R.id.linear_income_list);
+		linear_memo_list = (LinearLayout) v.findViewById(R.id.linear_memo_list);
+		linear_data_manage = (LinearLayout) v.findViewById(R.id.linear_data_manage);
+		linear_show_memo = (LinearLayout) v.findViewById(R.id.linear_show_memo);
+		linear_exit = (LinearLayout) v.findViewById(R.id.linear_exit);
 	}
 
 	@Override
@@ -91,7 +88,7 @@ public class FirstPageFragment extends BaseFragment implements OnClickListener {
 	@Override
 	public void initEvent() {
 		// TODO Auto-generated method stub
-
+		init();
 	}
 
 	// 初始化数据
@@ -104,7 +101,6 @@ public class FirstPageFragment extends BaseFragment implements OnClickListener {
 		linear_data_manage.setOnClickListener(this);
 		linear_show_memo.setOnClickListener(this);
 		linear_exit.setOnClickListener(this);
-		tv_name.setText(Application.user.getName());
 	}
 
 	@Override
