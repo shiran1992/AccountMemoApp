@@ -1,141 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-
-    <RelativeLayout
+    android:background="#365469">
+    <LinearLayout
+        android:id="@+id/ll_nav"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/wish_image_def" >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/icon_add" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="vertical"
-            android:padding="20dp" >
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/tv_left_month"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="本月结余"
-                    android:textColor="#ffffff"
-                    android:textSize="13sp" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/tv_left_month"
-                    android:src="@drawable/icon_edit" />
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:text="10000.00"
-                android:textColor="#ffffff"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/tv_out_str"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="本月支出:"
-                    android:textColor="#ffffff"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:id="@+id/tv_out_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/tv_out_str"
-                    android:text="300"
-                    android:textColor="#ffffff"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:id="@+id/tv_in_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:text="200"
-                    android:textColor="#ffffff"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:id="@+id/tv_in_str"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@id/tv_in_number"
-                    android:text="本月收入:"
-                    android:textColor="#ffffff"
-                    android:textSize="13sp" />
-            </RelativeLayout>
-        </LinearLayout>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:background="#f4f4f4"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp" >
+        android:layout_height="50dp"
+        android:background="#E95958"
+        android:gravity="center" >
 
         <TextView
-            android:id="@+id/tv_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2018年4月8日"
-            android:textSize="12sp"
-            android:layout_centerVertical="true" />
+            android:text="图表"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <lecho.lib.hellocharts.view.LineChartView  
+        android:id="@+id/line_chart"  
+        android:layout_below="@id/ll_nav" 
+        android:layout_width="fill_parent"  
+        android:layout_height="300dp"/>  
         
-        <TextView
-            android:id="@+id/tv_date_week"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="星期天"
-            android:textSize="12sp"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/tv_date"
-            android:layout_marginLeft="10dp" />
-        <TextView
-            android:id="@+id/tv_out_num_day"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="30.0"
-            android:textSize="12sp"
-            android:layout_centerVertical="true"
-           	android:layout_alignParentRight="true" />
-        <TextView
-            android:id="@+id/tv_out_str"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="支出:"
-            android:textSize="12sp"
-            android:layout_centerVertical="true"
-           	android:layout_toLeftOf="@id/tv_out_num_day" />
-    </RelativeLayout>
+    <lecho.lib.hellocharts.view.LineChartView  
+        android:id="@+id/line_chart1" 
+        android:layout_below="@id/line_chart" 
+        android:layout_width="fill_parent"  
+        android:layout_height="300dp"/>  
 
-</LinearLayout>
+</RelativeLayout>

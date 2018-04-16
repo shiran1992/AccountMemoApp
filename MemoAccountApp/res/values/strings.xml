@@ -14,5 +14,10 @@
     <string name="title_activity_data_manage">DataManageActivity</string>
     <string name="title_activity_add_memo">AddMemoActivity</string>
     <string name="title_activity_memo_list">MemoListActivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_add_revenue">AddRevenueActivity</string>
+    <string name="title_activity_add_type">AddTypeActivity</string>
+    <string name="title_activity_my_type">MyTypeActivity</string>
+    <string name="title_activity_revenue_list">RevenueListActivity</string>
 
 </resources>

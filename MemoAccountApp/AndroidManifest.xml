@@ -91,6 +91,30 @@
             android:name="com.example.memoaccountapp.activity.MemoListActivity"
             android:label="@string/title_activity_memo_list" >
         </activity>
+        <activity
+            android:name="com.example.memoaccountapp.activity.WebViewActivity"
+            android:label="@string/title_activity_web_view" >
+        </activity>
+        <activity
+            android:name="com.example.memoaccountapp.activity.SelectRevenueActivity"
+            android:label="@string/title_activity_add_revenue" >
+        </activity>
+        <activity
+            android:name="com.example.memoaccountapp.activity.AddTypeActivity"
+            android:label="@string/title_activity_add_type" >
+        </activity>
+        <activity
+            android:name="com.example.memoaccountapp.activity.MyTypeActivity"
+            android:label="@string/title_activity_my_type" >
+        </activity>
+        <activity
+            android:name="com.example.memoaccountapp.activity.AddRevenueActivity"
+            android:label="@string/title_activity_add_revenue" >
+        </activity>
+        <activity
+            android:name="com.example.memoaccountapp.activity.RevenueListActivity"
+            android:label="@string/title_activity_revenue_list" >
+        </activity>
     </application>
 
 </manifest>

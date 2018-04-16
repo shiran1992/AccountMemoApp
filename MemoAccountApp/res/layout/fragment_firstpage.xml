@@ -1,250 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity" >
+    android:orientation="vertical" >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#e0e0e0"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="10dp" >
+        android:layout_height="200dp"
+        android:background="@drawable/wish_image_def" >
 
-        <TextView
-            android:id="@+id/tv_str_name"
+        <ImageView
+            android:id="@+id/img_add_revenue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="当前用户:"
-            android:textColor="@color/string_register"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:lines="1"
-            android:text="" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal" >
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_add" />
 
         <LinearLayout
-            android:id="@+id/linear_add_expend"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/addoutaccount" />
-
-            <TextView
-                android:id="@+id/tv_add_expend"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="新增支出"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear_add_income"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/addinaccount" />
-
-            <TextView
-                android:id="@+id/tv_add_income"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="新增收入"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear_expend_list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/outaccountinfo" />
-
-            <TextView
-                android:id="@+id/tv_expend_list"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我的支出"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal" >
-
-        <LinearLayout
-            android:id="@+id/linear_income_list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/inaccountinfo" />
-
-            <TextView
-                android:id="@+id/tv_add_expend"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我的收入"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear_show_memo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/accountflag" />
-
-            <TextView
-                android:id="@+id/tv_show_memo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="增加收支便签"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/linear_memo_list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/sysset" />
-
-            <TextView
-                android:id="@+id/tv_data_manage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我的收支便签"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal" >
-
-        <LinearLayout
-            android:id="@+id/linear_data_manage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/showinfo" />
-
-            <TextView
-                android:id="@+id/tv_data_manage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="数据管理"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear_exit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/exit" />
-
-            <TextView
-                android:id="@+id/tv_exit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="退出"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
+            android:layout_alignParentBottom="true"
             android:orientation="vertical"
-            android:visibility="invisible" >
+            android:padding="20dp" >
 
-            <ImageView
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/exit" />
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_left_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月结余"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_left_month"
+                    android:src="@drawable/icon_edit" />
+            </RelativeLayout>
 
             <TextView
-                android:id="@+id/tv_exit2"
+                android:id="@+id/tv_left_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="退出"
-                android:textColor="#2f2f2f"
-                android:textSize="16sp" />
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="0.00"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_out_str"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月支出:"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_out_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_out_str"
+                    android:text="0.00"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_in_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0.00"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_in_str"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv_in_number"
+                    android:text="本月收入:"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            </RelativeLayout>
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f4f4f4"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018年4月8日"
+            android:textSize="12sp"
+            android:layout_centerVertical="true" />
+        
+        <TextView
+            android:id="@+id/tv_date_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期天"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_date"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/tv_out_num_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30.0"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+           	android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/tv_out_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出:"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+           	android:layout_toLeftOf="@id/tv_out_num_day" />
+    </RelativeLayout>
+    <ListView  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rl_first"
+        android:id="@+id/lv_revenue"  
+        >  
+    </ListView> 
 
 </LinearLayout>

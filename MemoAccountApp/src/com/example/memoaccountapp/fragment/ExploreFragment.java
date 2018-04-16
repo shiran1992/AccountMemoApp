@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.memoaccountapp.R;
+import com.example.memoaccountapp.activity.WebViewActivity;
 import com.example.memoaccountapp.adapter.MyBaseAdapter;
 import com.example.memoaccountapp.adapter.ViewHolder;
 import com.example.memoaccountapp.entity.Explore;
@@ -88,7 +89,6 @@ public class ExploreFragment extends BaseFragment implements OnItemClickListener
 	 * 获取列表
 	 */
 	public void setconcernedfriends() {
-
 		HttpUtils http = new HttpUtils();
 		String url = Application.servlet + "GetExploresServlet";
 		RequestParams params = new RequestParams();
@@ -129,12 +129,10 @@ public class ExploreFragment extends BaseFragment implements OnItemClickListener
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int position,
 			long arg3) {
-		// 关注的这个人传到OtherPeopleInfoActivity中
-			// Intent intent = new Intent();
-			// intent.setClass(getActivity(), OtherPeopleInfoActivity.class);
-			// Gson gson = new Gson();
-			// intent.putExtra("peopleinfo",
-			// gson.toJson(concerns.get(position - 1).getConcernedId()));
-			// startActivity(intent);
+			 Intent intent = new Intent();
+			 intent.setClass(getActivity(), WebViewActivity.class);
+			 Gson gson = new Gson();
+			 intent.putExtra("explore",gson.toJson(concerns.get(position)));
+			 startActivity(intent);
 	}
 }
